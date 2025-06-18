@@ -1,0 +1,64 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond circulaire -->
+  <circle cx="100" cy="100" r="90" fill="#F5E6D3" stroke="#D4B896" stroke-width="2"/>
+  
+  <!-- Éléments tech en arrière-plan -->
+  <g opacity="0.4">
+    <!-- Circuit board pattern -->
+    <path d="M 25 25 L 35 25 L 35 35 L 45 35 L 45 25 L 55 25" stroke="#C8A882" stroke-width="2" fill="none"/>
+    <path d="M 145 175 L 155 175 L 155 165 L 165 165 L 165 175 L 175 175" stroke="#C8A882" stroke-width="2" fill="none"/>
+    
+    <!-- Code brackets plus visibles -->
+    <text x="20" y="100" font-family="Courier, monospace" font-size="16" fill="#A08966" opacity="0.7">&lt;/&gt;</text>
+    <text x="160" y="100" font-family="Courier, monospace" font-size="16" fill="#A08966" opacity="0.7">{}</text>
+    
+    <!-- Binary code -->
+    <text x="30" y="170" font-family="Courier, monospace" font-size="8" fill="#C8A882">1010</text>
+    <text x="140" y="35" font-family="Courier, monospace" font-size="8" fill="#C8A882">0110</text>
+    
+    <!-- CPU/Chip representation -->
+    <rect x="160" y="40" width="12" height="12" fill="none" stroke="#C8A882" stroke-width="1"/>
+    <circle cx="166" cy="46" r="1" fill="#C8A882"/>
+    
+    <rect x="28" y="148" width="12" height="12" fill="none" stroke="#C8A882" stroke-width="1"/>
+    <circle cx="34" cy="154" r="1" fill="#C8A882"/>
+  </g>
+  
+  <!-- Container pour les initiales -->
+  <g transform="translate(100, 100)">
+    <!-- Forme géométrique moderne derrière les lettres -->
+    <polygon points="-35,-20 35,-20 40,0 35,20 -35,20 -40,0" fill="#E8D4B0" opacity="0.7"/>
+    
+    <!-- Initiales principales -->
+    <text x="0" y="8" text-anchor="middle" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#8B7355">
+      MC
+    </text>
+  </g>
+  
+  <!-- Éléments tech décoratifs -->
+  <g opacity="0.7">
+    <!-- Terminal cursor -->
+    <rect x="75" y="125" width="2" height="12" fill="#A08966">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Network nodes -->
+    <circle cx="65" cy="55" r="3" fill="#A08966"/>
+    <circle cx="135" cy="145" r="3" fill="#A08966"/>
+    <circle cx="55" cy="145" r="3" fill="#A08966"/>
+    <circle cx="145" cy="55" r="3" fill="#A08966"/>
+    
+    <!-- Connection lines (network) -->
+    <line x1="65" y1="55" x2="100" y2="80" stroke="#A08966" stroke-width="1.5" opacity="0.6"/>
+    <line x1="135" y1="145" x2="100" y2="120" stroke="#A08966" stroke-width="1.5" opacity="0.6"/>
+    <line x1="55" y1="145" x2="85" y2="120" stroke="#A08966" stroke-width="1.5" opacity="0.6"/>
+    <line x1="145" y1="55" x2="115" y2="80" stroke="#A08966" stroke-width="1.5" opacity="0.6"/>
+    
+    <!-- Code symbols -->
+    <text x="45" y="75" font-family="Courier, monospace" font-size="12" fill="#A08966" opacity="0.8">fn</text>
+    <text x="140" y="125" font-family="Courier, monospace" font-size="12" fill="#A08966" opacity="0.8">=&gt;</text>
+  </g>
+  
+  <!-- Bordure finale pour la finition -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#D4B896" stroke-width="1" opacity="0.5"/>
+</svg>
