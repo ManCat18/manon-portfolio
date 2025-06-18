@@ -7,7 +7,7 @@ const Header = ({ age }) => {
     <header className="relative overflow-hidden bg-gradient-to-r from-amber-100 to-orange-200 py-1">
       <div className="absolute inset-0 bg-gradient-to-r from-amber-200/30 to-orange-300/30 animate-pulse"></div>
       <div className="relative max-w-6xl mx-auto px-6 text-center">
-        <div className="w-20 h-20 sm:w-10 sm:h-10 md:w-18 md:h-18 mx-auto mt-2 mb-4 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center text-white text-xl sm:text-xl md:text-2xl font-bold shadow-xl">
+        <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-amber-600 to-orange-700 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-xl">
           MC
         </div>
         <h1 className="text-xl font-bold text-amber-900 mb-4">Manon CATTANEO</h1>
