@@ -4,12 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "chmod +x node_modules/.bin/vite && vite build",
-    "build:vite": "vite build",
+    "build": "npx vite build",
     "dev": "vite",
-    "preview": "vite preview",
-    "build:direct": "node_modules/.bin/vite build",
-    "postinstall": "chmod +x node_modules/.bin/vite || true"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
