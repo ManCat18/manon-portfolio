@@ -5,7 +5,7 @@ import { Mail, Phone } from 'lucide-react';
 const Footer = () => {
     return (
         <footer className="bg-amber-900 text-white py-8 mt-16">
-            <div className="max-w-6xl mx-auto px-6 text-center">
+            <div className="max-w-6xl mx-auto px-6 text-center text-base">
                 <p className="mb-4">Manon Cattaneo - Portfolio 2025</p>
                 <div className="flex flex-col md:flex-row justify-center items-center sm:gap-2 md:gap-6text-amber-200 text-center">
                     <div className="flex items-center gap-2">
