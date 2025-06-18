@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "build": "chmod +x node_modules/.bin/vite && vite build",
+    "build:vite": "vite build",
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:direct": "node_modules/.bin/vite build",
+    "postinstall": "chmod +x node_modules/.bin/vite || true"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
@@ -30,6 +32,6 @@
     "vite": "^6.3.5"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=16.0.0"
   }
 }
