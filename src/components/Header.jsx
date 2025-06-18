@@ -36,7 +36,7 @@ const Header = ({ age }) => {
           </div>
           <div className="text-sm flex items-center gap-2">
             <Phone className="w-5 h-5" />
-            <span><strong>+33</strong> 6 21 52 67 65</span>
+            <span>+33 6 21 52 67 65</span>
           </div>
           <div className="text-sm flex items-center gap-2">
             <MapPin className="w-5 h-5" />
