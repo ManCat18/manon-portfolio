@@ -16,7 +16,7 @@ const Header = ({ age }) => {
         <div className="flex md:flex-row justify-center items-center gap-4 md:gap-8 mb-8">
           <div className="bg-white/80 rounded-lg p-6 shadow-lg w-full md:w-auto text-center">
             <div className="text-3xl font-bold text-amber-800">3</div>
-            <div className="text-sm text-amber-600">années d'études</div>
+            <div className="text-sm text-amber-600">ans d'études</div>
           </div>
           <div className="bg-white/80 rounded-lg p-6 shadow-lg w-full md:w-auto text-center">
             <div className="text-3xl font-bold text-amber-800">{age}</div>
