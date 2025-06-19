@@ -20,8 +20,8 @@ const Navigation = ({ activeSection, setActiveSection }) => {
             <div className="max-w-6xl mx-auto px-6">
                 {/* Bouton menu mobile */}
                 <div className="flex justify-between items-center py-4 md:hidden">
-                    <div className="text-lg font-bold text-amber-800">Menu</div>
-                    <button onClick={() => setIsOpen(!isOpen)} className="text-amber-800">
+                    <div className="text-lg font-bold text-orange-800">Menu</div>
+                    <button onClick={() => setIsOpen(!isOpen)} className="text-orange-800">
                         {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
                     </button>
                 </div>
@@ -38,7 +38,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
                                 }}
                                 className={`w-full text-left px-4 py-2 rounded-lg transition-all ${activeSection === item.id
                                         ? 'bg-amber-600 text-white shadow'
-                                        : 'text-amber-800 hover:bg-amber-100'
+                                        : 'text-orange-800 hover:bg-orange-100'
                                     }`}
                             >
                                 {item.label}
@@ -55,7 +55,7 @@ const Navigation = ({ activeSection, setActiveSection }) => {
                             onClick={() => setActiveSection(item.id)}
                             className={`px-4 py-2 rounded-lg transition-all ${activeSection === item.id
                                     ? 'bg-amber-600 text-white shadow-lg'
-                                    : 'text-amber-800 hover:bg-amber-100'
+                                    : 'text-orange-800 hover:bg-orange-100'
                                 }`}
                         >
                             {item.label}
