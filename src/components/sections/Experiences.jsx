@@ -21,8 +21,7 @@ const experiences = [
             "Mise en rayon",
             "Inventaire",
             "Caisse",
-            "Fermeture & ouverture",
-            "Preparation de commande"
+            "Fermeture & ouverture"
         ]
     },
     {
@@ -33,6 +32,15 @@ const experiences = [
             "Gestion cuisson des viandes et fritures",
             "Service à table & Drive",
             "Nettoyage & Fermeture"
+        ]
+    },
+    {
+        period: "MAI 2022 - AOUT 2022",
+        title: "Equipière Polyvalente Saisonnière",
+        company: "E.Leclerc | HIRSINGUE",
+        tasks: [
+            "Mise en rayon",
+            "Inventaire"
         ]
     }
 ];

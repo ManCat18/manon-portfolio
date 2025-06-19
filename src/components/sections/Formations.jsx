@@ -33,6 +33,15 @@ const formations = [
             "NSI (Numérique et Sciences Informatiques)",
             "SVT (Sciences de la Vie et de la Terre)"
         ]
+    },
+    {
+        period: "2020 - 2021",
+        title: "ABIBAC",
+        school: "Lycée Jean-Jacques HENNER | ALTKIRCH",
+        subjects: [
+            "Baccalauréat bilingue allemand : obtention de l'Abitur",
+            "Moyenne : 13,55 / 20"
+        ]
     }
 ];
 
