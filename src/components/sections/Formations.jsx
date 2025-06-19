@@ -31,7 +31,8 @@ const formations = [
         subjects: [
             "Spécialités : Mathématique (1ère)",
             "NSI (Numérique et Sciences Informatiques)",
-            "SVT (Sciences de la Vie et de la Terre)"
+            "SVT (Sciences de la Vie et de la Terre)",
+            "Moyenne : 14,8 / 20"
         ]
     },
     {
