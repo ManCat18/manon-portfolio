@@ -11,7 +11,8 @@ const formations = [
             "Programmation web (Java)",
             "Gestion d'entreprise",
             "Programmation applicative (Java)",
-            "Introduction à l'intelligence artificielle"
+            "Introduction à l'intelligence artificielle",
+            "Moyenne : 10,73 / 20"
         ]
     },
     {
@@ -21,7 +22,8 @@ const formations = [
         subjects: [
             "Programmation orientée objet (Java Python)",
             "SQL",
-            "Programmation web (HTML CSS PHP)"
+            "Programmation web (HTML CSS PHP)",
+            "Moyenne : 11,27 / 20"
         ]
     },
     {
