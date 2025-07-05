@@ -8,8 +8,8 @@ const About = () => {
             <h2 className="text-3xl font-bold text-amber-900 mb-6">À Propos</h2>
             <div className="text-lg text-gray-700 leading-relaxed">
                 <p className="mb-4">
-                    Actuellement en troisième année en licence d'informatique, je suis à la recherche d'une alternance pour les années <strong>2025 à 2027</strong> en bases de données, programmation applicative, 
-                    programmation web ou chefferie de projet. 
+                    Actuellement diplomée d’une licence informatique de l’université de Tours, je suis à la recherche de mon premier emploi. 
+                    Forte d’une expérience de gestion d’équipe et en relation sociale, je saurais être un plus dans une équipe.
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
                     <div>

@@ -34,7 +34,6 @@ const Portfolio = () => {
 
     return (
         <div>
-
             <Header age={age} />
             <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
             <main >
