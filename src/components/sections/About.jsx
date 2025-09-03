@@ -8,8 +8,8 @@ const About = () => {
             <h2 className="text-3xl font-bold text-amber-900 mb-6">À Propos</h2>
             <div className="text-lg text-gray-700 leading-relaxed">
                 <p className="mb-4">
-                    Actuellement diplomée d’une licence informatique de l’université de Tours, je suis à la recherche de mon premier emploi. 
-                    Forte d’une expérience de gestion d’équipe et en relation sociale, je saurais être un plus dans une équipe.
+                   Actuellement étudiante en première année de Master SAIM à l'Université de Bretagne Sud (Vannes). 
+                   En recherche de stage pour janvier 2027 (6 mois)
                 </p>
                 <div className="grid md:grid-cols-2 gap-6 mt-8">
                     <div>

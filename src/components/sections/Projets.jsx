@@ -4,15 +4,15 @@ import React from 'react';
 const projets = [
     {
         title: "PROJET PERSONNEL - Quizz",
-        description: "Site web permettant de jouer à des quizz et en créer",
+        description: "Site web permettant de jouer à des quiz et en créer",
         technologies: ["PostgreSQL", "React", "TailwindCSS"],
-        lien : ""
+        lien: <a href="https://quizentrepotes.vercel.app">Accès au site : Quiz</a>
     },
     {
         title: "PROJET PERSONNEL - Mécanique",
         description: "Site web permettant rechercher et ajouter des couples de serrage automobile (avec base de données)",
         technologies: ["PostgreSQL", "React", "TailwindCSS", "API Rest"],
-        lien: ""
+        lien: <a href="https://tightening-torque.vercel.app">Accès au site : Couples</a>
     },
     {
         title: "NUIT DE L'INFORMATIQUE 2021",
@@ -43,8 +43,8 @@ const Projets = () => {
                                 {tech}
                             </span>
                         ))}
-                    </div>
-                    <p className="text-gray-700 mb-4 leading-relaxed">{projet.lien}</p>
+                    </div><br />
+                    <p className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm text-center font-medium">{projet.lien}</p>
                 </div>
             ))}
         </section>
