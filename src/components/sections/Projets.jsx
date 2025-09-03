@@ -5,7 +5,14 @@ const projets = [
     {
         title: "PROJET PERSONNEL - Quizz",
         description: "Site web permettant de jouer à des quizz et en créer",
-        technologies: ["HTML", "CSS", "PHP", "SQL"]
+        technologies: ["PostgreSQL", "React", "TailwindCSS"],
+        lien : ""
+    },
+    {
+        title: "PROJET PERSONNEL - Mécanique",
+        description: "Site web permettant rechercher et ajouter des couples de serrage automobile (avec base de données)",
+        technologies: ["PostgreSQL", "React", "TailwindCSS", "API Rest"],
+        lien: ""
     },
     {
         title: "NUIT DE L'INFORMATIQUE 2021",
@@ -37,6 +44,7 @@ const Projets = () => {
                             </span>
                         ))}
                     </div>
+                    <p className="text-gray-700 mb-4 leading-relaxed">{projet.lien}</p>
                 </div>
             ))}
         </section>
