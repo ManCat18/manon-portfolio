@@ -15,7 +15,7 @@ const Header = ({ age }) => {
 
         <div className="flex md:flex-row justify-center items-center gap-4 md:gap-8 mb-8">
           <div className="bg-white/80 rounded-lg md:p-6 sm:p-auto shadow-lg w-full md:w-auto text-center">
-            <div className="text-3xl font-bold text-amber-800">4</div>
+            <div className="text-3xl font-bold text-amber-800">5</div>
             <div className="text-sm text-amber-600">ans d'études</div>
           </div>
           <div className="bg-white/80 rounded-lg md:p-6 sm:p-auto shadow-lg w-full md:w-auto text-center">
@@ -41,6 +41,7 @@ const Header = ({ age }) => {
           <div className="text-1g flex items-center gap-2">
             <MapPin className="w-5 h-5" />
             <span>BLOIS 41000</span>
+            <span>VANNES 56000</span>
           </div>
           <div className="text-1g flex items-center gap-2">
             <Car className="w-5 h-5" />

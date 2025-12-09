@@ -3,6 +3,17 @@ import React from 'react';
 
 const experiences = [
     {
+        period: "SEPTEMBRE 2025 - ACTUEL",
+        title: "Equipière Polyvalente Etudiante",
+        company: "LIDL | VANNES",
+        tasks: [
+            "Mise en rayon",
+            "Inventaire",
+            "Caisse",
+            "Fermeture & ouverture"
+        ]
+    },
+    {
         period: "AVRIL 2025 - JUIN 2025",
         title: "Product Owner - Stagiaire",
         company: "INNOVQUBE | NOISY-LE-GRAND",

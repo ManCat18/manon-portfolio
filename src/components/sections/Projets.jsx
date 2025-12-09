@@ -3,6 +3,11 @@ import React from 'react';
 
 const projets = [
     {
+        title: "PROJET TUTORE - Fabrik Ta Pepite",
+        description: "Projet d'innovation : mise en place d'une idée et développement de cette idée dans un contexte d'entreprenariat",
+        technologies: ["Lean Canva"],
+    },
+    {
         title: "PROJET PERSONNEL - Quizz",
         description: "Site web permettant de jouer à des quiz et en créer",
         technologies: ["PostgreSQL", "React", "TailwindCSS"],

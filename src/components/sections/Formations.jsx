@@ -3,6 +3,19 @@ import React from 'react';
 
 const formations = [
     {
+        period: "2025- 2026",
+        title: "MASTER 1",
+        school: "Université Bretagne Sud | VANNES",
+        subjects: [
+            "Programmation systèmes et réseaux",
+            "Programmation multi-paradigme",
+            "Big Data",
+            "Administration réseaux et systèmes",
+            "Introduction à l'intelligence artificielle",
+            "Moyenne : à définir"
+        ]
+    },
+    {
         period: "2024 - 2025",
         title: "LICENCE 3",
         school: "Université François Rabelais | BLOIS",

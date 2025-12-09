@@ -22,6 +22,11 @@ const competences = [
         category: "Orienté objet",
         skills: ["Python", "Java", "VBA (notions)"],
         icon: <Code className="w-5 h-5" />
+    },
+    {
+        category: "Fonctionnel",
+        skills: ["Java", "Scala", "OCaml"],
+        icon: <Code className="w-5 h-5" />
     }
 ];
 
