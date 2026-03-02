@@ -5,7 +5,7 @@ import { Globe, Database, Code, Users, Calendar, Award } from 'lucide-react';
 const competences = [
     {
         category: "Langages web",
-        skills: ["HTML", "CSS", "PHP"],
+        skills: ["HTML", "CSS", "PHP", "Javascript", "TypeScript", "Tailwind (CSS)"],
         icon: <Globe className="w-5 h-5" />
     },
     {
@@ -20,7 +20,7 @@ const competences = [
     },
     {
         category: "Orienté objet",
-        skills: ["Python", "Java", "VBA (notions)"],
+        skills: ["Python", "Java"],
         icon: <Code className="w-5 h-5" />
     },
     {

@@ -12,7 +12,6 @@ const formations = [
             "Big Data",
             "Administration réseaux et systèmes",
             "Introduction à l'intelligence artificielle",
-            "Moyenne : à définir"
         ]
     },
     {
@@ -24,9 +23,9 @@ const formations = [
             "Programmation web (Java)",
             "Gestion d'entreprise",
             "Programmation applicative (Java)",
-            "Introduction à l'intelligence artificielle",
-            "Moyenne : 10,73 / 20"
-        ]
+            "Introduction à l'intelligence artificielle"
+        ],
+        mean : "10.73 / 20",
     },
     {
         period: "2021 - 2024",
@@ -35,9 +34,9 @@ const formations = [
         subjects: [
             "Programmation orientée objet (Java Python)",
             "SQL",
-            "Programmation web (HTML CSS PHP)",
-            "Moyenne : 11,27 / 20"
-        ]
+            "Programmation web (HTML CSS PHP)"
+        ],
+        mean : "11.27 / 20",
     },
     {
         period: "2020 - 2021",
@@ -46,18 +45,18 @@ const formations = [
         subjects: [
             "Spécialités : Mathématique (1ère)",
             "NSI (Numérique et Sciences Informatiques)",
-            "SVT (Sciences de la Vie et de la Terre)",
-            "Moyenne : 14,8 / 20"
-        ]
+            "SVT (Sciences de la Vie et de la Terre)"
+        ],
+        mean : "14.8 / 20",
     },
     {
         period: "2020 - 2021",
         title: "ABIBAC",
         school: "Lycée Jean-Jacques HENNER | ALTKIRCH",
         subjects: [
-            "Baccalauréat bilingue allemand : obtention de l'Abitur",
-            "Moyenne : 13,55 / 20"
-        ]
+            "Baccalauréat bilingue allemand : obtention de l'Abitur"
+        ],
+        mean : "13.55 / 20",
     }
 ];
 
@@ -84,6 +83,8 @@ const Formations = () => {
                             </li>
                         ))}
                     </ul>
+                    {form.mean && 
+                    <p className="mt-4 bg-amber-50 text-amber-800 px-3 py-1 rounded-full text-sm font-medium w-max">Moyenne : {form.mean}</p>}
                 </div>
             ))}
         </section>
