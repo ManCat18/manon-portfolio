@@ -49,7 +49,8 @@ const Projets = () => {
                             </span>
                         ))}
                     </div><br />
-                    <p className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm text-center font-medium">{projet.lien}</p>
+                    {projet.lien &&
+                    <p className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm text-center font-medium">{projet.lien}</p>}
                 </div>
             ))}
         </section>
