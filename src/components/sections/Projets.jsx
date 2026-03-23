@@ -1,5 +1,5 @@
 // components/sections/Projets.jsx
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const projets = [
     {

@@ -1,5 +1,5 @@
 // components/sections/Experiences.jsx
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const experiences = [
     {
