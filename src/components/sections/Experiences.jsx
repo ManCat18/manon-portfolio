@@ -60,29 +60,77 @@ const Experiences = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Expériences Professionnelles</h2>
-            {experiences.map((exp, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
-                        <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg text-sm font-medium">
-                            {exp.period}
-                        </span>
-                        <div>
-                            <h3 className="text-xl font-bold text-amber-900">{exp.title}</h3>
-                            <p className="text-amber-700">{exp.company}</p>
+            <AnimatedSection>
+                {experiences.map((exp, index) => (
+                    <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
+                        <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
+                            <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg text-sm font-medium">
+                                {exp.period}
+                            </span>
+                            <div>
+                                <h3 className="text-xl font-bold text-amber-900">{exp.title}</h3>
+                                <p className="text-amber-700">{exp.company}</p>
+                            </div>
                         </div>
+                        <ul className="grid md:grid-cols-2 gap-2">
+                            {exp.tasks.map((task, taskIndex) => (
+                                <li key={taskIndex} className="flex items-center gap-3 text-gray-700">
+                                    <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
+                                    {task}
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                    <ul className="grid md:grid-cols-2 gap-2">
-                        {exp.tasks.map((task, taskIndex) => (
-                            <li key={taskIndex} className="flex items-center gap-3 text-gray-700">
-                                <span className="w-2 h-2 bg-amber-600 rounded-full"></span>
-                                {task}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            ))}
+                ))}
+            </AnimatedSection>
         </section>
     );
 };
 
 export default Experiences;
+
+function useInView(options = {}) {
+    const [isInView, setIsInView] = useState(false);
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                setIsInView(true);
+            }
+        }, {
+            threshold: 0.1,
+            ...options
+        });
+
+        if (ref.current) {
+            observer.observe(ref.current);
+        }
+
+        return () => {
+            if (ref.current) {
+                observer.unobserve(ref.current);
+            }
+        };
+    }, []);
+
+    return [ref, isInView];
+}
+
+// Composant pour animer les sections
+function AnimatedSection({ children, delay = 0 }) {
+    const [ref, isInView] = useInView();
+
+    return (
+        <div
+            ref={ref}
+            className={`transition-all duration-1000 ${isInView
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-20'
+                }`}
+            style={{ transitionDelay: `${delay}ms` }}
+        >
+            {children}
+        </div>
+    );
+}
