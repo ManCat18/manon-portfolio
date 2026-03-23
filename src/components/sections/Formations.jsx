@@ -64,7 +64,7 @@ const Formations = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Formations</h2>
-            <AnimatedSection>
+            <AnimatedSection delay={0}>
                 {formations.map((form, index) => (
                     <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
                         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
@@ -92,8 +92,6 @@ const Formations = () => {
         </section>
     );
 };
-
-export default Formations;
 
 function useInView(options = {}) {
     const [isInView, setIsInView] = useState(false);
@@ -140,3 +138,4 @@ function AnimatedSection({ children, delay = 0 }) {
         </div>
     );
 }
+export default Formations;

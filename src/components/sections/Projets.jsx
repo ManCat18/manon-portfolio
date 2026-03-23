@@ -35,7 +35,7 @@ const Projets = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Projets</h2>
-            <AnimatedSection>
+            <AnimatedSection delay={0}>
                 {projets.map((projet, index) => (
                     <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
                         <h3 className="text-xl font-bold text-amber-900 mb-4">{projet.title}</h3>
@@ -59,7 +59,6 @@ const Projets = () => {
     );
 };
 
-export default Projets;
 function useInView(options = {}) {
     const [isInView, setIsInView] = useState(false);
     const ref = useRef(null);
@@ -105,3 +104,5 @@ function AnimatedSection({ children, delay = 0 }) {
         </div>
     );
 }
+
+export default Projets;
