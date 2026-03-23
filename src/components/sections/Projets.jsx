@@ -35,8 +35,9 @@ const Projets = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Projets</h2>
-            <AnimatedSection delay={0}>
+            
                 {projets.map((projet, index) => (
+                    <AnimatedSection delay={0}>
                     <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
                         <h3 className="text-xl font-bold text-amber-900 mb-4">{projet.title}</h3>
                         <p className="text-gray-700 mb-4 leading-relaxed">{projet.description}</p>
@@ -53,8 +54,9 @@ const Projets = () => {
                         {projet.lien &&
                         <p className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm text-center font-medium">{projet.lien}</p>}
                     </div>
+                    </AnimatedSection>
                 ))}
-            </AnimatedSection>
+            
         </section>
     );
 };

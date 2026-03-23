@@ -64,8 +64,9 @@ const Formations = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Formations</h2>
-            <AnimatedSection delay={0}>
+            
                 {formations.map((form, index) => (
+                    <AnimatedSection delay={0}>
                     <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
                         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
                             <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg text-sm font-medium">
@@ -87,8 +88,9 @@ const Formations = () => {
                         {form.mean && 
                         <p className="mt-4 bg-amber-50 text-amber-800 px-3 py-1 rounded-full text-sm font-medium w-max">Moyenne : {form.mean}</p>}
                     </div>
+                    </AnimatedSection>
                 ))}
-            </AnimatedSection>
+            
         </section>
     );
 };

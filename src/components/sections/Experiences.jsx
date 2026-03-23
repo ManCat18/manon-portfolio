@@ -60,8 +60,9 @@ const Experiences = () => {
     return (
         <section className="space-y-6 p-8 mb-8">
             <h2 className="text-3xl font-bold text-amber-900 mb-8">Expériences Professionnelles</h2>
-            <AnimatedSection delay={0}>
+            
                 {experiences.map((exp, index) => (
+                    <AnimatedSection delay={0}>
                     <div key={index} className="bg-white rounded-2xl shadow-xl p-8">
                         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
                             <span className="bg-amber-100 text-amber-800 px-4 py-2 rounded-lg text-sm font-medium">
@@ -81,8 +82,8 @@ const Experiences = () => {
                             ))}
                         </ul>
                     </div>
+                    </AnimatedSection>
                 ))}
-            </AnimatedSection>
         </section>
     );
 };
